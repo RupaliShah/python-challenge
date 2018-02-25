@@ -63,9 +63,10 @@ us_state_abbrev = {
     'Wyoming': 'WY',
 }
 
-csvpath = os.path.join("Resources", "employee_data2.csv")
-                       
-with open(csvpath, newline ="") as csvfile:
+csvpath = os.path.join("..Resources", "employee_data2.csv")
+csvpath = "c:\LearnPython\Resources\employee_data2.csv"
+                      
+with open(csvpath, 'r', newline ="") as csvfile:
     csvreader = csv.reader(csvfile, delimiter=",")
     next(csvreader,None)
     
