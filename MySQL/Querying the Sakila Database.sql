@@ -31,7 +31,7 @@ GROUP BY last_name;
 SELECT last_name AS `Last Name`, count(*) AS `Number of Actors`
 FROM actor 
 GROUP BY last_name 
-HAVING count(last_name) > 1;
+HAVING count(last_name) >= 2;
 
 UPDATE actor
 SET first_name = "HARPO"
