@@ -1,30 +1,20 @@
 
 
+ 
 
-.container{
-    padding-right:15px;
-    padding-left:15px;
-    margin-right:20px;
-    margin-left:20px;  
-}
-}
-h1 {
-    text-align: center
-  }
-
-.box_weather{
-    border-style: solid;
-    border-width: 2px;
-    border-color: gray;
+#boxed{
+    border: 1px gray;
+    
+    
 }
 
-.box_table{
+#box-table{
     border-style: solid;
     border-width: 2px;
     border-color: black; 
 }
 
-h2{
-    text-align:center;
-
+img{
+    display: inline-block;
 }
+
