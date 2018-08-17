@@ -1,26 +1,22 @@
 
+## Ride Sharing
 
-```python
-# Observations
+### Observations
 
-#1.Urban cities have the highest number of rides representing 68% of the total rides for the three city types.
-#  They have majority of the lowest average fare representing as inversely proportional relationship between the number
-#  of rides and the average fare. 
+* Urban cities have the highest number of rides representing 68% of the total rides for the three city types.
+  They have majority of the lowest average fare representing as inversely proportional relationship between the number
+  of rides and the average fare. 
 
-#2.The average fare in rural cities is high as compared to the number of rides, representing an inverse proprtion betweeen
-#  the number of rides and the average fare.
+* The average fare in rural cities is high as compared to the number of rides, representing an inverse proprtion betweeen
+  the number of rides and the average fare.
 
-#3.Suburban cities are in the middle except for an outlier(Port James), where the number of rides are the highest of the 
-#  three city types, but the average fare is in between the highest the lowest average fare of suburban cities.
-```
+* Suburban cities are in the middle except for an outlier(Port James), where the number of rides are the highest of the 
+  three city types, but the average fare is in between the highest and the lowest average fare of suburban cities.
 
-
-```python
 import os
 import pandas as pd
 import numpy as np
 import matplotlib.pyplot as plt
-```
 
 
 ```python
@@ -70,7 +66,7 @@ plt.figure(figsize=(10,6))
 for spine in plt.gca().spines.values():
     spine.set_visible(False)
 plt.grid(color="white", linestyle="solid")
-plt.title("Pyber Ride Sharing Data(2016)")
+plt.title("Pyber Ride Sharing Data (2016)")
 plt.xlabel("Total Number of Rides(Per City)")
 plt.ylabel("Average Fare($)")
 ```
@@ -93,16 +89,24 @@ rural_handle = plt.scatter(rrides_per_city, ravg_fare, s=rdrivercount*10, faceco
 
 ```
 
+### The Bubble Plot showcases relationship between four key variables:
+
+* Average Fare ($) Per City
+* Total Number of Rides Per City
+* Total Number of Drivers Per City
+* City Type (Urban, Suburban, Rural)
+
+
 
 ```python
-lgnd= plt.legend(handles=[urban_handle, suburban_handle, rural_handle], loc="upper right", title='City Types', frameon=False)
+lgnd = plt.legend(handles=[urban_handle, suburban_handle, rural_handle], loc="upper right", title='City Types', frameon=False)
 for handle in lgnd.legendHandles:
     handle.set_sizes([40])
 plt.show()
 ```
 
 
-![png](output_10_0.png)
+![png](output_11_0.png)
 
 
 
@@ -126,7 +130,7 @@ plt.show()
 ```
 
 
-![png](output_12_0.png)
+![png](output_13_0.png)
 
 
 
@@ -150,7 +154,7 @@ plt.show()
 ```
 
 
-![png](output_14_0.png)
+![png](output_15_0.png)
 
 
 
@@ -174,5 +178,5 @@ plt.show()
 ```
 
 
-![png](output_16_0.png)
+![png](output_17_0.png)
 
