@@ -21,6 +21,7 @@ BBC, CBS, CNN, Fox, and NYT.
 
 
 ### Observations
+
 * The overall positive sentiment of CBS is three times greater than that of the next most positive sentiment, BBC, as 
   observed from the Bar plot. Majority of the positive sentiments of CBS have polarities in the 0.50 - 1.00 range. 
   Negative sentiment makes up for only about 5-6% of its sentiments. CBS singularly makes the entire dataset look more 
