@@ -1,20 +1,38 @@
 
+## Sentiment Analysis of the Twitter Activity of News Organizations
 
-```python
-# Observations
-#1.The overall positive sentiment of CBS is three times greater than that of the next most positive sentiment, BBC, as 
-#  observed from the Bar plot. Majority of the positive sentiments of CBS have polarities in the 0.50 - 1.00 range. 
-#  Negative sentiment makes up for only about 5-6% of its sentiments. CBS singularly makes the entire dataset look more 
-#  positive.
+This Python Script provides a visualized summary of the sentiments expressed in tweets sent out by the news organizations: 
+BBC, CBS, CNN, Fox, and NYT.
 
-#2.The sentiment of CNN is the most neutral of all media sources in this dataset. More than 75% of the sentiments have polarities
-#  ranging between -0.5 and 0.5. The sentiments in the last 35-55 tweets show a polrizing effect, possibly from an event that 
-#  seems to have split the sentiment of tweets on either side. 
+* Pulls last 100 tweets from each outlet.
+* Performs a sentiment analysis with the compound, positive, neutral, and negative scoring for each tweet. 
 
-#3.The sentiments of New York Times are spread almost evenly across positive, negative and neutral; although the polarity of
-#  of the negative sentiments is on the higher side. The negative sentiment of Fox news outweighs the positive,  
-#  whereas the positive sentiment of BBC outweighs the negative, as interpreted from the Scatter plot. 
-```
+### Scatter Plot
+
+* Visualizes the sentiments of the last 100 tweets sent out by each news organization, ranging from -1.0 to 1.0, where a 
+  score of 0 expresses a neutral sentiment, -1 the most negative sentiment possible, and +1 the most positive sentiment possible.
+* Each plot point reflects the _compound_ sentiment of a tweet.
+* Each plot is sorted by its relative timestamp.
+
+### Bar Plot
+
+* Visualizes the _overall_ sentiments of the last 100 tweets from each organization. 
+* The compound sentiments are aggregarted and analyzed by VADER.
+
+
+### Observations
+* The overall positive sentiment of CBS is three times greater than that of the next most positive sentiment, BBC, as 
+  observed from the Bar plot. Majority of the positive sentiments of CBS have polarities in the 0.50 - 1.00 range. 
+  Negative sentiment makes up for only about 5-6% of its sentiments. CBS singularly makes the entire dataset look more 
+  positive.
+
+* The sentiment of CNN is the most neutral of all media sources in this dataset. More than 75% of the sentiments have 
+  polarities ranging between -0.5 and 0.5. The sentiments in the last 35-55 tweets show a polrizing effect, possibly from 
+  an event that seems to have split the sentiment of tweets on either side. 
+
+* The sentiments of New York Times are spread almost evenly across positive, negative and neutral; although the polarity of
+  of the negative sentiments is on the higher side. The negative sentiment of Fox news outweighs the positive,  
+  whereas the positive sentiment of BBC outweighs the negative, as interpreted from the Scatter plot. 
 
 
 ```python
